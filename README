@@ -1,0 +1,15 @@
+Program to implement the expression or expr. Basically a small program that works like expr on Unix, gets the expression and calculates the result of the same.
+
+Partners Soham Sadhu, Juan Golphin
+
+You need go lang compiler like 6g or gccgo to compile and run this thing.
+
+Not sure if the make file has been done correctly so may or may not work. It just says no target and no make file found. 
+
+The program works for some cases and not for all cases. It works for expression like this one ./expr 2 \* \( 3 + 4 \) / \( 2 - 4 \) but not for an expression like this 3 * ( 4 + ( 7 - 3 ) * 3 ) + 1.
+
+Have tried doing the documentation by making a doc.go file having package documentation but even that doesn't seem to work.
+
+The Algorithms used: 
+
+For conversion from infix to postfix used Dijkstra's Shunting yard Algorithm. Then used the below algorithm to evaluate from postfix expression.
